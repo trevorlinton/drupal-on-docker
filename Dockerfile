@@ -9,6 +9,7 @@ RUN apt-get -y install composer
 RUN apt-get -y install php-mysql
 RUN apt-get -y install sudo
 RUN apt-get -y install mysql-client
+RUN apt-get -y install vim
 RUN rm /var/www/html/index.html
 RUN a2enmod rewrite
 COPY apache2.conf /etc/apache2/apache2.conf
